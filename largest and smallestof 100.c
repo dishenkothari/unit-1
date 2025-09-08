@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int n, i, num, largest, smallest;
+    scanf("%d", &num);
+    largest = smallest = num;
+    for (i = 2; i <= 100; i++) {
+        scanf("%d", &num);
+        if (num > largest) largest = num;
+        if (num < smallest) smallest = num;
+    }
+    printf("Largest: %d\nSmallest: %d", largest, smallest);
+    return 0;
+}
